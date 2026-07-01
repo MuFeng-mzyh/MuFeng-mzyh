@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>
+        /* 基础样式重置与全局设置 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* 卡片容器样式 */
+        .card {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* 头像样式 */
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #e1e8ed;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        /* 文本排版 */
+        h1 { font-size: 2em; margin-bottom: 10px; color: #1c1e21; }
+        .bio { font-size: 1.1em; color: #65676b; margin-bottom: 25px; line-height: 1.6; }
+
+        /* 链接按钮样式 */
+        .links a {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background 0.3s ease;
+        }
+        .links a:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- 替换为你自己的头像链接 -->
+        <img src="https://avatars.githubusercontent.com/u/你的GitHubID" alt="头像" class="avatar">
+        
+        <!-- 你的基本信息 -->
+        <h1>你好，我是 [你的名字/昵称] 👋</h1>
+        <p class="bio">
+            一名热爱技术的开发者 / 设计师。<br>
+            专注于前端开发与开源社区贡献。<br>
+            欢迎来到我的数字小站！
+        </p>
+
+        <!-- 你的社交或项目链接 -->
+        <div class="links">
+            <a href="https://github.com/你的用户名" target="_blank">GitHub</a>
+            <a href="mailto:你的邮箱@example.com">联系我</a>
+            <a href="https://你的博客链接.com" target="_blank">我的博客</a>
+        </div>
+    </div>
+</body>
+</html>
