@@ -3,78 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人主页</title>
+    <title>刘宇航 Yuhang Liu - 学术主页</title>
     <style>
-        /* 基础样式重置与全局设置 */
+        /* 全局样式 */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: #f4f7f9;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
             padding: 20px;
+            color: #333;
         }
 
-        /* 卡片容器样式 */
-        .card {
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        /* 卡片容器 */
+        .container {
+            background: #fff;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
             max-width: 600px;
             width: 100%;
             text-align: center;
+            transition: transform 0.3s ease;
         }
+        .container:hover { transform: translateY(-5px); }
 
-        /* 头像样式 */
+        /* 头像样式（使用首字母代替） */
         .avatar {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
-            border: 4px solid #e1e8ed;
-            margin-bottom: 20px;
-            object-fit: cover;
+            background: #4facfe;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            margin: 0 auto 20px;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
 
-        /* 文本排版 */
-        h1 { font-size: 2em; margin-bottom: 10px; color: #1c1e21; }
-        .bio { font-size: 1.1em; color: #65676b; margin-bottom: 25px; line-height: 1.6; }
+        /* 标题与副标题 */
+        h1 { font-size: 2.5em; margin-bottom: 10px; color: #2c3e50; }
+        .subtitle { font-size: 1.2em; color: #7f8c8d; margin-bottom: 25px; display: block; }
 
-        /* 链接按钮样式 */
-        .links a {
-            display: inline-block;
-            margin: 5px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
+        /* 信息项 */
+        .info-item {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 4px solid #4facfe;
+            text-align: left;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .info-item strong { color: #2c3e50; }
+
+        /* 联系方式链接 */
+        .contact a {
+            color: #4facfe;
             text-decoration: none;
-            border-radius: 20px;
-            transition: background 0.3s ease;
+            font-weight: 500;
         }
-        .links a:hover { background-color: #0056b3; }
+        .contact a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <!-- 替换为你自己的头像链接 -->
-        <img src="https://avatars.githubusercontent.com/u/你的GitHubID" alt="头像" class="avatar">
+    <div class="container">
+        <!-- 头像占位符（显示姓名首字母） -->
+        <div class="avatar">LYH</div>
         
-        <!-- 你的基本信息 -->
-        <h1>你好，我是 [你的名字/昵称] 👋</h1>
-        <p class="bio">
-            一名热爱技术的开发者 / 设计师。<br>
-            专注于前端开发与开源社区贡献。<br>
-            欢迎来到我的数字小站！
-        </p>
+        <!-- 姓名与英文名 -->
+        <h1>刘宇航</h1>
+        <span class="subtitle">Yuhao Liu</span>
 
-        <!-- 你的社交或项目链接 -->
-        <div class="links">
-            <a href="https://github.com/你的用户名" target="_blank">GitHub</a>
-            <a href="mailto:你的邮箱@example.com">联系我</a>
-            <a href="https://你的博客链接.com" target="_blank">我的博客</a>
+        <!-- 学校与身份 -->
+        <div class="info-item">
+            <strong>🎓 身份：</strong>博士研究生<br>
+            <strong>🏫 院校：</strong>北京理工大学 (BIT)<br>
+            <strong>📍 地点：</strong>中国北京
+        </div>
+
+        <!-- 研究方向 -->
+        <div class="info-item">
+            <strong>🤖 研究方向：</strong><br>
+            机器人运动规划与决策<br>
+            智能控制与自主系统
+        </div>
+
+        <!-- 联系方式 -->
+        <div class="info-item contact">
+            <strong>📧 联系方式：</strong><br>
+            邮箱：<a href="mailto:3220245204@bit.edu.cn">3220245204@bit.edu.cn</a>
+        </div>
+
+        <!-- 底部标语 -->
+        <div style="margin-top: 30px; font-size: 0.9em; color: #95a5a6;">
+            欢迎交流学术与合作机会！
         </div>
     </div>
 </body>
